@@ -1,0 +1,175 @@
+/* CSS and Full Screen manuver through lesson from scotch.io */
+
+
+/* colors:
+
+.color-primary-0 { color: #0A6AAE }
+.color-primary-1 { color: #5092C1 }
+.color-primary-2 { color: #2D7BB3 }
+.color-primary-3 { color: #075084 }
+.color-primary-4 { color: #053F68 }
+
+.rgba-primary-0 { color: rgba( 10,106,174,1) }
+.rgba-primary-1 { color: rgba( 80,146,193,1) }
+.rgba-primary-2 { color: rgba( 45,123,179,1) }
+.rgba-primary-3 { color: rgba(  7, 80,132,1) }
+.rgba-primary-4 { color: rgba(  5, 63,104,1) }
+*/
+
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+
+  -moz-transform: translateZ(0) translateX(0);
+  -ms-transform: translateZ(0) translateX(0);
+  -o-transform: translateZ(0) translateX(0);
+  -webkit-transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  -moz-transition: 500ms ease all;
+  -ms-transition: 500ms ease all;
+  -o-transition: 500ms ease all;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+
+}
+
+#site-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: #2D7BB3;
+  padding: 15px;
+}
+
+#site-wrapper.show-nav #site-canvas {
+  moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-transform: translateZ(0) translateX(100%);
+  -ms-transform: translateZ(0) translateX(100%);
+  -o-transform: translateZ(0) translateX(100%);
+  -webkit-transform: translateZ(0) translateX(100%);
+  transform: translateZ(0) translateX(100%);
+
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/* Not sure if this Row thing will mess up further columns/rows. */
+.row {
+  margin: 0px;
+  padding: 10px;
+}
+
+.container-fluid{
+  padding-left:0px;
+  padding-right:0px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+body {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+.toggle-nav {
+  font-size:25px;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+a.toggle-nav {
+  text-decoration: none;
+  color:#000;
+}
+
+.subtitle{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ul.nav li a {
+  font-size: 25px;
+  color:#000;
+}
+
+ul.nav li a:hover{
+  font-size: 25px;
+  color:#FFF;
+  background-color:#000;
+}
+
+.modal {
+  position: absolute;
+}
+
+.nav-foot{
+font-size: 1em;
+float: center;
+text-align: center;
+width: 100%;
+}
+
+.nav-foot ul{
+list-style: none;
+}
+
+.nav-foot li{
+display:inline;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.nav-foot a {
+text-decoration: none;
+}
+
+.nav-foot a:hover{
+text-decoration: underline;
+}
+
+.box{
+  box-shadow: 7px 7px 5px #888888;
+}
+
+a.title{
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover.title{
+  color: #23527C;
+}
